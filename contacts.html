@@ -124,7 +124,19 @@
               <textarea class="form__textarea" id="message" name="message" placeholder="Опишите задачу или задайте вопрос…"></textarea>
               <div class="form__error"></div>
             </div>
-            <button type="submit" class="btn btn--primary form__btn">Отправить заявку</button>
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+            <div class="form__group">
+              <label class="form__label">
+              <input type="checkbox" id="agree" name="agree">
+              Согласен на обработку персональных данных
+              </label>
+              <div class="form__error"></div>
+</div>
+
+<div class="form__error" id="form-general-error"></div>
+
+<button type="submit" class="btn btn--primary form__btn">Отправить заявку</button>
           </form>
           <div class="form__success" id="form-success">
             ✓ Заявка отправлена! Свяжемся с вами в рабочее время.
